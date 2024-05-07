@@ -18,6 +18,7 @@ export const AddPostForm = () => {
     const onContentChanged = e => setContent(e.target.value)
     const onAuthorChanged = e => setUserId(e.target.value)
 
+    //canSave
     const canSave =
         [title, content, userId].every(Boolean) && addRequestStatus === 'idle'
 
