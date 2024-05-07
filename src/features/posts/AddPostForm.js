@@ -22,6 +22,7 @@ export const AddPostForm = () => {
     const canSave =
         [title, content, userId].every(Boolean) && addRequestStatus === 'idle'
 
+    //onsavepostclicked
     const onSavePostClicked = async () => {
         if (canSave) {
         try {
